@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Farma App</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-warning text-white">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+  <h4 class="text-center text-warning">
+		FARMA APP
+		<footer class="p-footer text-white font-italic">Scegli la tua farmacia!</footer>
+  </h4>
+</nav>
+
+<form class="mform" method="POST" action="SearchByFields" name="SearchByFields" onsubmit="return ValidateForm()">
+	
+	<div class="form-group">
+		<label for="exampleFormControlSelect1">Regione</label>
+		<select class="form-control" name="regione" id="Regione">
+		<option value=""></option>
+		</select>
+	</div>
+	
+	<div class="form-group">
+		<label for="exampleFormControlSelect1">Provincia</label>
+		<select class="form-control" name="provincia" id="Provincia">
+		</select>
+	</div>
+	
+	<div class="form-group">
+		<label for="exampleFormControlSelect1">Comune</label>
+		<select class="form-control" name="comune" id="Comune">
+		</select>
+	</div>
+		
+	
+	<div class="form-group mradio">
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="linguaggio" id="inlineRadio1" value="0">
+			<label class="form-check-label" for="inlineRadio1">Farmacie/Parafarmacie</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="linguaggio" id="inlineRadio2" value="1">
+			<label class="form-check-label" for="inlineRadio2">Farmacie</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" name="linguaggio" id="inlineRadio3" value="-1">
+			<label class="form-check-label" for="inlineRadio3">Parafarmacie</label>
+		</div>
+	</div>
+	
+	<div class="form-group col-md-12 mbutton">
+			<button type="submit" class="btn btn-primary btn-dark btn-lg">CERCA</button>
+	</div>
+</form>
+
+
+	<div class="form-group col-md-12 mbutton">
+			<a href="./Gps.jsp">
+				<button type="submit" class="btn btn-primary btn-dark btn-lg">USA GPS</button>
+			</a>
+	</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/LoadTable.js"></script>
+	<script src="./js/Campi.js"></script>
+</body>
+
+</html>
