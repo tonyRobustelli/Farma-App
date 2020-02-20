@@ -1,1 +1,67 @@
+.navbar-brand
+{
+	height: 200px;
+	line-height: 40px;
+}
 
+.mform
+{	
+	margin-top: 50px;
+	padding: 0;
+}
+
+.mbutton
+{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.mradio
+{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.mtable
+{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.mdiv
+{
+	margin-top: 30px;
+	width: 550px;
+	height: 550px;
+}
+
+@media (max-width: 575.98px) 
+{ 
+	.mdiv
+	{
+		margin-top: 30px;
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) 
+{ 
+	.mdiv
+	{
+		margin-top: 30px;
+		width: 300px;
+		height: 300px;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+{ 
+	.mdiv
+	{
+		margin-top: 30px;
+		width: 400px;
+		height: 400px;
+	}
+}
